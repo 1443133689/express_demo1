@@ -1,0 +1,31 @@
+{
+  "name": "express_project",
+  "version": "1.0.0",
+  "description": "learn from `web development with node and express'",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1443133689/express_project.git"
+  },
+  "keywords": [
+    "express",
+    "node-js"
+  ],
+  "author": "phx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1443133689/express_project/issues"
+  },
+  "homepage": "https://github.com/1443133689/express_project#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express3-handlebars": "^0.5.2"
+  }
+}
