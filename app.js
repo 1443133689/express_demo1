@@ -13,8 +13,14 @@ app.engine('hbs', hbs({ // 注册模板引擎处理后缀名为 hbs 的文件
 	defaultLayout:'main', // 基础布局模板为main.hbs,取消在reder时传入{layout:false}
 	extname:'.hbs' // 指定模板后缀，默认为.handlebars
 }));
-app.set('view engine', 'hbs');
+// 读取文件
+app.use(express.static(__dirname + '/public'));
 
+app.set('view engine', 'hbs');
+app.use((req, res, next) => {
+	res.locals.showTests = app.get('env') !== 'production' && req.query.test === '1';
+	next();
+})
 app.get('/', (req, res) => {
 	res.render('home');
 });

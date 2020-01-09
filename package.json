@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/1443133689/express_project#readme",
   "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.0.0",
     "nodemon": "^2.0.2"
   },
   "dependencies": {
